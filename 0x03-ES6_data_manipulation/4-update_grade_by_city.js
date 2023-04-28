@@ -1,11 +1,22 @@
-/* eslint-disable no-param-reassign*/
-/* eslint-disable no-prototype-builtin*/
-export default function updateStudentGradeByCity(arr, city, newGrades) {
-  return arr.filter((obj) => obj.city === location).map((students) => {
-    newGrade.map((studentGrade) {
-      if (studentGrade.studentId === studentId) {
-        
-      }
-    })
-  }
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-prototype-builtins */
+export default function updateStudentGradeByCity(list, city, newGrade) {
+  return list
+    .filter((obj) => obj.location === city)
+    .map((students) => {
+    //   console.log(newGrade);
+      newGrade.map((studentGrade) => {
+        if (studentGrade.studentId === students.id) {
+          // eslint-disable-next-line no-param-reassign
+          students.grade = studentGrade.grade;
+        }
+
+        if (!students.hasOwnProperty('grade')) {
+          student.grade = 'N/A';
+        }
+        return students;
+      });
+
+      return students;
+    });
 }
