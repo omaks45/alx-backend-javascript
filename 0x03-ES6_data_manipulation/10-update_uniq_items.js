@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export default function updateUniqueItems(map) {
   if (map instanceof Map) {
     for (const [key, value] of map) {
@@ -7,5 +8,5 @@ export default function updateUniqueItems(map) {
     }
     return map;
   }
-  throw new Error('cannot process');
+  throw new Error('Cannot process');
 }
