@@ -27,28 +27,28 @@ describe('#calculateNumber() with type SUM', () => {
 
 describe('#calculateNumber() with type SUBTRACT', () => {
   it('subtract 1 and 3', () => {
-    expect(calculateNumber('SUBTRACT', 1, 3)).to.equal(2);
+    expect(calculateNumber('SUBTRACT', 1, 3)).to.equal(-2);
   });
   it('subtract 1.4 and 4.5', () => {
-    expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(4);
+    expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
   });
   it('subtract 1.2 and 3.7', () => {
-    expect(calculateNumber('SUBTRACT', 1.2, 3.7)).to.equal(3);
+    expect(calculateNumber('SUBTRACT', 1.2, 3.7)).to.equal(-3);
   });
   it('subtract 1.5 and 3.7', () => {
-    expect(calculateNumber('SUBTRACT', 1.5, 3.7)).to.equal(2);
+    expect(calculateNumber('SUBTRACT', 1.5, 3.7)).to.equal(-2);
   });
   it('subtract 0.1 and 0.3', () => {
     expect(calculateNumber('SUBTRACT', 0.1, 0.3)).to.equal(0);
   });
   it('subtract -0.7 and 0.7', () => {
-    expect(calculateNumber('SUBTRACT', -0.7, 0.7)).to.equal(2);
+    expect(calculateNumber('SUBTRACT', -0.7, 0.7)).to.equal(-2);
   });
   it('subtract -0.8 and -0.7', () => {
     expect(calculateNumber('SUBTRACT', -0.8, -0.7)).to.equal(0);
   });
-  it('subtract 0.8 and 2.4', () => {
-    expect(calculateNumber('SUBTRACT', 0.8, 2.4)).to.equal(1);
+  it('subtract 0.8 and -0.4', () => {
+    expect(calculateNumber('SUBTRACT', 0.8, -0.4)).to.equal(1);
   });
 });
 
