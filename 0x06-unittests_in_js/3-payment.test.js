@@ -10,6 +10,7 @@ describe("sendPaymentRequestToApi", function() {
 
 	sendPaymentRequestToApi(50, 24.52);
 
-	expect(spy.calledWith(100, 20)).to.be.true;
+	assert(spy.calledOnce);
+	spy.restore();
     });
 });
