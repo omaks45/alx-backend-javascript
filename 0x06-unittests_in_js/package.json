@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^8.48.0",
     "mocha": "^10.2.0"
   },
   "devDependencies": {
